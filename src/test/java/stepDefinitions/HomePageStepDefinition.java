@@ -43,7 +43,11 @@ public class HomePageStepDefinition {
 
     @When("user clicks on {string} button")
     public void user_clicks_on_button(String string) {
+<<<<<<< HEAD
 
+=======
+        System.out.println("next");
+>>>>>>> 46174db (initial commit)
     }
     @Then("Sign In page should displayed")
     public void sign_in_page_should_displayed() {
