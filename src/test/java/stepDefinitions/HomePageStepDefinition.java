@@ -41,20 +41,24 @@ public class HomePageStepDefinition {
     }
 
 
-    @When("user clicks on {string} button")
+    @When("user clicks on Sign In button")
     public void user_clicks_on_button(String string) {
-<<<<<<< HEAD
-
-=======
-        System.out.println("next");
->>>>>>> 46174db (initial commit)
+        homePageObj.clickSignInButton();
     }
     @Then("Sign In page should displayed")
     public void sign_in_page_should_displayed() {
+        Assert.assertTrue("Candidate Sign In page is displayed",signInPageObj.verifySignInPage().contains("Candidate Sign In"));
+    }
+
+    @When("user clicks on Employer Site button")
+    public void user_clicks_on_employer_site_button() {
+        homePageObj.clickEmployerSiteButton();
 
     }
-    @Then("user is able to sign In")
-    public void user_is_able_to_sign_in() {
-
+    @Then("Seek Employer page should displayed")
+    public void seek_employer_page_should_displayed() {
+        Assert.assertTrue("Employer Sign In page is displayed",employerPageObj.verifySeekEmployerPage().contains("Employer"));
     }
+
+
 }

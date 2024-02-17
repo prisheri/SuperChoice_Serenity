@@ -1,11 +1,16 @@
 package steps;
 
 import net.serenitybdd.annotations.Step;
+import pages.SignInPage;
 
 public class SignInStepPage {
 
+    SignInPage signPage;
+
     @Step
-    public void verifySignInPage(){
+    public String verifySignInPage(){
+        return signPage.getSignInpageTitle();
+
 
     }
 }

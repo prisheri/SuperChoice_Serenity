@@ -46,4 +46,12 @@ public class HomePage extends PageObject {
         String jobResult=$(By.id("SearchSummary")).getText();
         return jobResult;
     }
+
+    public void clickSignInbutton(){
+        $(By.xpath("(//a[@title='Sign in'])[1]")).click();
+    }
+
+    public void clickEmployerSiteBtn(){
+        $(By.xpath("//a[@data-automation='employers_link']")).click();
+    }
 }

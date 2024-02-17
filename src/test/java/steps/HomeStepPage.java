@@ -38,12 +38,12 @@ public class HomeStepPage {
 
     @Step
     public void clickSignInButton(){
-
+        homePage.clickSignInbutton();
     }
 
     @Step
     public void clickEmployerSiteButton(){
-
+        homePage.clickEmployerSiteBtn();
     }
 
     @Step

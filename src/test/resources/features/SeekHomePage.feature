@@ -13,9 +13,14 @@ Feature: This feature file covers scenarios for Seek home page
       #This scenario is for verifying working of Sign In button on home page
   Scenario:Verify on clicking Sign In button Sign In landing page should displayed
     Given user is on seek landing page
-    When user clicks on "Sign In" button
+    When user clicks on Sign In button
     Then Sign In page should displayed
-    And user is able to sign In
+
+     #This scenario is for verifying working of Employer Site button on home page
+  Scenario:Verify on clicking Employer Site button Seek Employer page should displayed
+    Given user is on seek landing page
+    When user clicks on Employer Site button
+    Then Seek Employer page should displayed
 
 
 
