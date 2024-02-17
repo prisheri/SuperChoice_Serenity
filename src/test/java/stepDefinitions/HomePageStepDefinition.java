@@ -42,7 +42,7 @@ public class HomePageStepDefinition {
 
 
     @When("user clicks on Sign In button")
-    public void user_clicks_on_button(String string) {
+    public void user_clicks_on_sign_in_button() {
         homePageObj.clickSignInButton();
     }
     @Then("Sign In page should displayed")
